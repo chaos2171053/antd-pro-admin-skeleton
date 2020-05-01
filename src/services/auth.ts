@@ -35,7 +35,6 @@ export async function passwordLogin(params: PasswordLoginParamsType): Promise<an
     data: params,
   });
 }
-
 export async function getSmsCaptcha(params: SmsCaptchaParamsType): Promise<any> {
   return request('/api/auth/sms-captcha', {
     params,
